@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background: url("../img/bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox {
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#hiscoreBox {
+    position: absolute;
+    top: 59px;
+    right: 120px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#board {
+    background: linear-gradient(rgb(170, 236, 170), rgb(236, 236, 167));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head {
+    background: url(../img/snake.png);
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    z-index: 22;
+}
+
+.snake {
+    background: url(../img/snakebody.png);
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.food {
+    background: url(../img/apple1.png);
+    background-size: 100% 100%;
+    z-index: 55;
+}
+
+.banana {
+    background: url(../img/apple.png);
+    background-size: 100% 100%;
+    z-index: 55;
+}
+
+.grapes {
+    background: url(../img/grapes.png);
+    background-size: 100% 100%;
+    z-index: 55;
+}
